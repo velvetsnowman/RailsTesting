@@ -7,4 +7,9 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should get the new route' do
+    get '/posts/new'
+    assert_response :success
+  end
+
 end
