@@ -1,0 +1,10 @@
+<h1>Posts#index</h1>
+
+<%= link_to 'Add Post', '/posts/new' %>
+<%= link_to 'Sign Up', '/users/new' %>
+<!-- <%= link_to 'Sign In', '/users/new' %> -->
+
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<p><%= post.body %></p>
+<% end %>
